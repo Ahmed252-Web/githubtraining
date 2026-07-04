@@ -1,0 +1,14 @@
+name: First Workflow
+
+on:
+  push:
+    branches-ignore:  
+     - main
+
+jobs:
+  example-jobs:
+    runs-on: ubuntu-latest
+
+   stops:
+      - name: Print a welcom Message
+        run: echo "Welcom to our prog"
